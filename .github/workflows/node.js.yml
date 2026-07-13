@@ -1,7 +1,7 @@
 name: sample_run
 
 on:
-  push:
+  pull_request:
     branches:
       - main
       - dev
