@@ -1,0 +1,21 @@
+name: sample_run
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - UAT
+
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: running commands
+        run: |
+         echo "hello"
+         pwd
+         uname -r
+         date
+        
